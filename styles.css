@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: aliceblue;
+}
+
+nav a{
+    width: 50px;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+.breadсrumbs a {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:last-child, .breadсrumbs a:last-child {
+    border: none;
+}
+
+nav a:hover, .breadсrumbs a:hover  {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    position: fixed;
+    top: 35px;
+    width: 300px;
+    height: 100vh;
+    padding-top: 5px;
+    overflow-y: auto;
+    z-index: 100;
+    background-color: lightseagreen;
+    border-right: 1px solid aliceblue;
+}
+
+.asideMenu {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideMenu_logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.asideMenu_first, .asideMenu_second, .asideMenu_third {
+    display: flex;
+    align-items: center;
+}
+
+.asideMenu_second {
+    padding-left: 25px;
+    display: none;
+}
+
+.asideMenu_third {
+    padding-left: 50px;
+    display: none;
+}
+
+.first .asideMenu_first .logo {
+     background: url(img/logoemail.png) no-repeat;
+     background-size: 20px 20px;
+ }
+
+.second .asideMenu_first .logo {
+    background: url(img/logoemail.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.second .asideMenu_second {
+    display: flex;
+}
+
+.second .asideMenu_second .logo {
+    display: none;
+}
+
+.third .asideMenu_first .logo {
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.third .asideMenu_second {
+    display: flex;
+}
+
+.third .asideMenu_second .logo {
+    display: flex;
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.third .asideMenu_third {
+    display: flex;
+}
+
+.third .asideMenu_third .logo {
+    display: flex;
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.fourth .asideMenu_first .logo {
+    display: none;
+}
+
+.fifth .asideMenu_first .logo {
+    display: none;
+}
+
+.sixth .asideMenu_first .logo {
+    display: none;
+}
+
+.seventh .asideMenu_first .logo {
+    display: none;
+}
+
+.eighth .asideMenu_first .logo {
+    display: none;
+}
+
+.ninth .asideMenu_first .logo {
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.ninth .asideMenu_second {
+    display: flex;
+}
+
+.ninth .asideMenu_second .logo {
+    display: flex;
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.ninth .asideMenu_third {
+    display: flex;
+}
+
+.ninth .asideMenu_third .logo {
+    display: flex;
+    background: url(img/logofb.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.tenth .asideMenu_first .logo {
+    display: none;
+}
+
+.eleventh .asideMenu_first .logo {
+    display: none;
+}
+
+main {
+    position: fixed;
+    top: 35px;
+    margin-left: 300px;
+    height: 100vh;
+    background-color: lightseagreen;
+    /*width: 100%;*/
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: available;
+    width: fill-available;
+}
+
+.breadсrumbs {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid aliceblue;
+}
+
+.gallery {
+    height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.gallery_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    float: left;
+}
+
+.gallery_pic .picture{
+    width: 250px;
+    height: 250px;
+}
+
+.gallery_pic .first {
+    background: transparent url(img/metal.jpg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+.gallery_pic .second {
+    background: transparent url(img/sea2.jpg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+.gallery_pic .third {
+    background: transparent url(img/sea3.jpg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+.gallery_pic .fourth {
+    background: transparent url(img/sea4.jpg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+.gallery_pic h2{
+    margin: 0;
+}
